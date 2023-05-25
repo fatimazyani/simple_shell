@@ -1,11 +1,11 @@
 #include "shell.h"
 
 /**
- * hsh - main shell loop
- * @info: the parameter & return info struct
- * @av: the argument vector from main()
+ * hsh - the shell loop
+ * @info: the info structure
+ * @av: the given argument vector from main
  *
- * Return: 0 on success, 1 on error, or error code
+ * Return: on success will return 0,  else 1 on error, or error code
  */
 int hsh(info_t *info, char **av)
 {
@@ -44,13 +44,13 @@ int hsh(info_t *info, char **av)
 }
 
 /**
- * find_builtin - finds a builtin command
- * @info: the parameter & return info struct
+ * find_builtin - will find the builtin command
+ * @info: the info structure
  *
- * Return: -1 if builtin not found,
- *			0 if builtin executed successfully,
- *			1 if builtin found but not successful,
- *			-2 if builtin signals exit()
+ * Return:  if builtin not found return -1,
+ * else if if builtin executed successfully returns 0,
+ * else if builtin found but not successful returns 1,
+ * else if builtin signals exit() returns -2
  */
 int find_builtin(info_t *info)
 {
@@ -78,8 +78,8 @@ int find_builtin(info_t *info)
 }
 
 /**
- * find_cmd - finds a command in PATH
- * @info: the parameter & return info struct
+ * find_cmd - will find a command in the given PATH
+ * @info: the  info structure
  *
  * Return: void
  */
@@ -120,9 +120,8 @@ void find_cmd(info_t *info)
 }
 
 /**
- * fork_cmd - forks a an exec thread to run cmd
- * @info: the parameter & return info struct
- *
+ * fork_cmd - will fork an exec thread to run command
+ * @info: the  info structure
  * Return: void
  */
 void fork_cmd(info_t *info)
