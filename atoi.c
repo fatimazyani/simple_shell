@@ -26,7 +26,7 @@ int is_delim(char c, char *delim)
 }
 
 /**
- *_isalpha : checks for alphabetic character
+ *_isalpha - checks for alphabetic character
  *@c: The character to input
  *Return: 1 if c is alphabetic, 0 else
  */
@@ -40,9 +40,9 @@ int _isalpha(int c)
 }
 
 /**
- *_atoi :  converts a string to an integer
- *@s: the string to be converted
- *Return: 0 if no numbers in string
+ * _atoi - transform a string to an int
+ * @str: the given string
+ * Return: int format
  */
 
 int _atoi(char *s)
