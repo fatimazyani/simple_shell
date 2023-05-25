@@ -41,7 +41,7 @@ int _isalpha(int c)
 
 /**
  * _atoi - transform a string to an int
- * @str: the given string
+ * @s: the given string
  * Return: int format
  */
 
