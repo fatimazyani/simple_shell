@@ -1,10 +1,10 @@
 #include "shell.h"
 
 /**
- * input_buf - buffers chained commands
- * @info: parameter struct
- * @buf: address of buffer
- * @len: address of len var
+ * input_buf - input buffers
+ * @info: parameter structure
+ * @buf: address of the given buffer
+ * @len: address of the given len var
  *
  * Return: bytes read
  */
@@ -45,8 +45,8 @@ ssize_t input_buf(info_t *info, char **buf, size_t *len)
 }
 
 /**
- * get_input - gets a line minus the newline
- * @info: parameter struct
+ * get_input - will get a line
+ * @info: parameter structure
  *
  * Return: bytes read
  */
@@ -90,9 +90,9 @@ ssize_t get_input(info_t *info)
 }
 
 /**
- * read_buf - reads a buffer
- * @info: parameter struct
- * @buf: buffer
+ * read_buf - will read a given buffer
+ * @info: parameter structure
+ * @buf: the given buffer
  * @i: size
  *
  * Return: r
@@ -110,10 +110,10 @@ ssize_t read_buf(info_t *info, char *buf, size_t *i)
 }
 
 /**
- * _getline - gets the next line of input from STDIN
- * @info: parameter struct
- * @ptr: address of pointer to buffer, preallocated or NULL
- * @length: size of preallocated ptr buffer if not NULL
+ * _getline - will get the next line
+ * @info: parameter structure
+ * @ptr: the address of a given pointer to a buffer
+ * @length: the size of a pointer
  *
  * Return: s
  */
