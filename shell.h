@@ -58,7 +58,7 @@ typedef struct liststr
  *@path: string path
  *@argc: argument count
  *@line_count: error count
- *@err_num: error code 
+ *@err_num: error code
  *@linecount_flag: count flag
  *@fname:  file name
  *@env:  environ
